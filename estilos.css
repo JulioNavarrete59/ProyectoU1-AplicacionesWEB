@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.especialidades {
+    background-color: rgb(35, 68, 112);
+    color: white;
+    text-decoration: solid;
+}
+.valores {
+    background-color: aliceblue;
+    color: black;
+    text-decoration: solid;
+}
+h4 {
+    text-align: center;
+}
+p {
+    margin: 20px;
+}
+.valores1 {
+    text-align: center;
+}
+.quienes_somos {
+    background-color: aliceblue;
+    padding-bottom: 10px;
+}
+.tipos_esp {
+    margin: 20px;
+}
+.pie_pagina {
+    width: 100%;
+    background-color: rgb(35, 68, 112);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.pie_pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie_pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie_pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+.pie_pagina .grupo-1 .box h2{
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie_pagina .grupo-1 .box p{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.pie_pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie_pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+.pie_pagina .grupo-2 {
+    background-color: #0d2033;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+.pie_pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .pie_pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
