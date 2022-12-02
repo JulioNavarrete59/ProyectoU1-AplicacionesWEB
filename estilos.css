@@ -6,12 +6,12 @@
     text-decoration: solid;
 }
 .valores {
-    background-color: aliceblue;
     color: black;
     text-decoration: solid;
 }
 h4 {
     text-align: center;
+    padding-top: 10px;
 }
 p {
     margin: 20px;
@@ -20,7 +20,6 @@ p {
     text-align: center;
 }
 .quienes_somos {
-    background-color: aliceblue;
     padding-bottom: 10px;
 }
 .tipos_esp {
