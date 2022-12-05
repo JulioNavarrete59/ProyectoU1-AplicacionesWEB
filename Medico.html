@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/bootstrap.scss">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/bootstrap.scss">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="imagenes/clinica_santiago_logo.png" width="75" class="navbar-brand"><a class="navbar-brand" href="#">Clínica Santiago</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img src="imagenes/clinica_santiago_logo.png" width="75" class="navbar-brand"><a class="navbar-brand"
+        href="#">Clínica Santiago</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Medico.html">Médicos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Laboratorio.html">Laboratorio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="imagen.html">Imagen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <br>
-            <form class="navbar-form navbar-left" action="/action_page.php">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
-              </form>
-        </div>
-    </nav>
-</nav>
-    <nav class="navbar  navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Nuestros Medicos</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Medico.html">Médicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Laboratorio.html">Laboratorio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="imagen.html">Imagen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <br>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
-          </ul>
-          <form class="navbar-form navbar-left" action="/action_page.php"></form>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+    </nav>
+    </nav>
+    <nav class="navbar  navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Nuestros Medicos</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php"></form>
 
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Agendar Cita</button>
-        
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Agendar
+          Cita</button>
+
         <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Horarios de Consulta</h4>
-        </div>
-        <div class="modal-body">
-          <p> <h3> Horario de Visita Hospitalización: </h3>
-            Lunes a Sabado de 10:00 a.m. a 12:00 p.m. y de 4:00 pm a 5:00pm 
-            
-            <h3> Horarios de Atención en el área administrativa y consulta externa</h3>
-            Lunes a Sabado de 7:00 a.m. a 12:00 p.m. y de 1:30 pm a 5:00pm
-            
-            <h3> Horarios de atención en Urgencias: </h3>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Horarios de Consulta</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                <h3> Horario de Visita Hospitalización: </h3>
+                Lunes a Sabado de 10:00 a.m. a 12:00 p.m. y de 4:00 pm a 5:00pm
+
+                <h3> Horarios de Atención en el área administrativa y consulta externa</h3>
+                Lunes a Sabado de 7:00 a.m. a 12:00 p.m. y de 1:30 pm a 5:00pm
+
+                <h3> Horarios de atención en Urgencias: </h3>
                 de Lunes a Domingo: 24 horas</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-        </div>
-      </nav>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+    </nav>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -104,27 +109,27 @@
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-  
+
         <div class="item active">
           <img src="img/1.jpg" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">  
+          <div class="carousel-caption">
           </div>
         </div>
-  
+
         <div class="item">
           <img src="img/2.jpg" alt="Chicago" style="width:100%;">
           <div class="carousel-caption">
-            
+
           </div>
         </div>
-      
+
         <div class="item">
           <img src="img/2.jpg" alt="New York" style="width:100%;">
           <div class="carousel-caption">
-            
+
           </div>
         </div>
-    
+
       </div>
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -136,67 +141,71 @@
         <span class="sr-only">Siguiente</span>
       </a>
     </div>
-  
+
     <!-- Appointment Start -->
     <div class="container-fluid bg-primary my-1 py-1">
-        <div class="container py-5">
-           
-                <div class="text center-block">
-                    
-                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Información</h5>
-                        <h1 class="display-4">Tu salud esta en nuestras manos</h1>
-                    
-                    <p class="text-white mb-5">Nosotros contamos con un equipo de Medicos de elite especializados en diferentes paises y areas 
-                    Nosotros contamos con un equipo de Medicos de elite especializados en diferentes paises y areas Nosotros contamos con un equipo de Medicos de elite especializados en diferentes paises y areas .</p>
-                    <center> <a class="btn btn-dark rounded-pill py-3 px-5 me-3"  href="contacto.html">Contactos</a> </center>
+      <div class="container py-5">
+
+        <div class="text center-block">
+
+          <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Información</h5>
+          <h1 class="display-4">Tu salud esta en nuestras manos</h1>
+
+          <p class="text-white mb-5">Nosotros contamos con un equipo de Medicos de elite especializados en diferentes
+            paises y areas
+            Nosotros contamos con un equipo de Medicos de elite especializados en diferentes paises y areas Nosotros
+            contamos con un equipo de Medicos de elite especializados en diferentes paises y areas .</p>
+          <center> <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="contacto.html">Contactos</a> </center>
         </div>
+      </div>
     </div>
-</div>
 
-</section>
+    </section>
 
-<footer class="pie_pagina">
+  </div>
+  <footer class="pie_pagina">
     <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="imagenes/clinica_santiago_logo.png">
-                </a>
-            </figure>
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="imagenes/clinica_santiago_logo.png">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>Sobre nosotros</h2>
+        <p>Autores: <br>
+          Derick Granda<br>
+          Mayerly Guaman<br>
+          Mónica Jara<br>
+          Julio Navarrete<br>
+          Liseth Poma</p>
+        <p>Creado el 30 de noviembre del 2022</p>
+      </div>
+      <div class="box">
+        <h2>Siguenos</h2>
+        <div class="red-social">
+          <a href="#" class="fa-brands fa-facebook"></a>
+          <a href="#" class="fa-brands fa-twitter"></a>
+          <a href="#" class="fa-brands fa-instagram"></a>
+          <a href="#" class="fa-brands fa-whatsapp"></a>
         </div>
-        <div class="box">
-            <h2>Sobre nosotros</h2>
-            <p>Autores: <br>
-                Derick Granda<br>
-                Mayerly Guaman<br>
-                Mónica Jara<br>
-                Julio Navarrete<br>
-                Liseth Poma</p>
-            <p>Creado el 30 de noviembre del 2022</p>
-        </div>
-        <div class="box">
-            <h2>Siguenos</h2>
-            <div class="red-social">
-                <a href="#" class="fa-brands fa-facebook"></a>
-                <a href="#" class="fa-brands fa-twitter"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-whatsapp"></a>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="grupo-2">
-        <div class="col">
-            <small>© 2022 <b>Clínica Santiago</b> - Hospital General Privado</small>
-        </div>
-        <div class="col">
-            <small>Santo Domingo de los Tsáchilas - Ecuador</small>
-        </div>
+      <div class="col">
+        <small>© 2022 <b>Clínica Santiago</b> - Hospital General Privado</small>
+      </div>
+      <div class="col">
+        <small>Santo Domingo de los Tsáchilas - Ecuador</small>
+      </div>
     </div>
-</footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 
-</body>  
+</body>
+
 </html>
