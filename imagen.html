@@ -4,136 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
+    <title>PROYECTO U1 - ATWEB</title>
 </head>
 
+
 <body>
-    <div class="img_hospital p-5"
-        style="background-image: url('imagenes/Clinica1.jpg')">
-        <div class="d-flex justify-content-end px-5">
-            <a href="" class="text-white px-2">comprobantes electrónicos</a>
-            <a href="" class="text-white px-2 mr-5">Resultados de laboratorio</a>
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <img src="imagenes/clinica_santiago_logo.png" width="75" class="navbar-brand"><a class="navbar-brand"
+            href="#">Clínica Santiago</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Medico.html">Médicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Laboratorio.html">Laboratorio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="imagen.html">Imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <br>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
         </div>
-        <div class=" d-flex  justify-content-between">
-            <div>
-                <img width="150px"
-                    src="imagenes/clinica_santiago_logo.png" alt="">
-            </div>
-            <div>
-                <a href="index.html" class="text-white px-2">Inicio</a>
-                <a href="Medico.html" class="text-white px-2 mr-5">Médicos</a>
-                <a href="Laboratorio.html" class="text-white px-2 mr-5">Laboratorio</a>
-                <a href="imagen.html" class="text-white px-2 mr-5">Imagen</a>
-                <a href="contacto.html" class="text-white px-2 mr-5">Contacto</a>
-                <a href="" class="btn btn-primary">Resultados de laboratorio</a>
+    </nav>
+    <div class="container pt-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/contacto-hero.jpg" class="d-block w-100" alt="50px">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Clinica1.jpg" class="d-block w-100" alt="75px">
+                </div>
             </div>
         </div>
-        <div class="text-black my-5">
-            <h2>Clínica Santiago</h2>
-            <P>Desde 1981 cuidando tu salud</P>
+        <div class=" pb-2 mb-8  border-bottom border-default">
         </div>
     </div>
-    <div class="bg-primary row text-white p-5">
-        <div class="col row ">
-            <div><img src="" alt=""></div>
-            <div class="">
-                <h4>
-                    Ecografías</h4>
-                <p>Lunes a Viernes: 07h00 - 22h00
-                    Sábado: 08h00 - 16h00
+    <div class=" row text-white p-5 imagen_detalles text-center d-flex justify-content-center align-self-center m-0">
+        <div class="col-12 col-md-4 d-flex flex-column flex-md-row justify-content-center  align-self-center">
+            <div class=" m-3"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-clock-fill bg-success2" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                </svg>
+            </div>
+            <div class=" ">
+                <h4 class="text-md-start m-0">
+
+                    Ecografías
+                </h4>
+                <p class="text-md-start">Lunes a Viernes: 07h00 - 22h00 <br>
+                    Sábado: 08h00 - 16h00<br>
                     Domingo: 08:00 a 13:00</p>
             </div>
         </div>
-        <div class="col">
-            <div><img src="" alt=""></div>
-            <div>
-                <h4>
-                    Rayos X, Tomografía, Densitometría y Mamografía</h4>
-                <p>Lunes a Domingo: 07:00 a 23:00</p>
+        <div
+            class="col-12 col-md-4 d-flex  flex-column flex-md-row justify-content-center  align-self-center border border-dark border-top-0 border-bottom-0 border-none">
+            <div class=" m-3"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-clock-fill bg-success2" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                </svg>
+            </div>
+            <div class=" ">
+                <h4 class="text-md-start m-0">
+
+                    Rayos X, Tomografía, Densitometría y Mamografía
+                </h4>
+                <p class="text-md-start">Lunes a Domingo: 07:00 a 23:00</p>
             </div>
         </div>
-        <div class="col d-flex justify-content-center">
-            <div>
-                <button class="btn btn-success">Contactar</button>
+
+        <div class="col-12 col-md-4 d-flex justify-content-center  align-self-center">
+            <div class="w-100">
+                <a href="contacto.html" class="button-contactar  ">Contactar</a>
             </div>
         </div>
     </div>
+
+    <div class="row fondo_video p-5 m-0">
+        <div class="col-12 col-lg-6 p-5"><img
+                src="	https://www.clinicasantiago.com.ec/wp-content/uploads/2021/08/tomografia-clinica-santiago.jpg"
+                class="img-fluid" alt=""></div>
+        <div class="col m-4">
+            <h1>Servicio de imagen</h1>
+            <p>
+                Nuestro servicio de imagen está a cargo de nuestro personal experto en radiología para el análisis
+                de imágenes que permiten ver estructuras dentro del cuerpo para el diagnóstico y tratamiento.
+
+            </p>
+            <h3 class="text-success">
+                El servicio de imagen cuenta con
+            </h3>
+            <ul class="border-start border-success margen-list">
+                <li>Rayos X</li>
+                <li>Fluroscopia</li>
+                <li>Tomografía</li>
+                <li>Densitometría</li>
+                <li>Mamografía</li>
+                <li>Ecografía -Ultrasonido </li>
+            </ul>
+            <h3 class="text-success">
+                Tecnología y formación</h3>
+            <p class=" border-start border-success  margen-list">En constante innovación tecnológica y en permanente
+                capacitación para entregar el mejor servicio en
+                la región.</p>
+        </div>
+    </div>
     <div class="container">
+    <div class=" px-md-5">
+        <div class="d-flex justify-content-center">
+            <h1 class="text-primary">Convenios
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center px-md-5 mx-md-5">
+            <p class="px-md-5 mx-md-5 text-center">Trabajamos incansablemente para satisfacer las necesidades de nuestros pacientes, por
+                ello mantenemos importantes convenios con las principales Empresas de Medicina Prepagada.</p>
+        </div>
+    </div>
+        <div class="ullist">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/Panamericanlife_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/net_services_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" alt="" class="imgScale">
+            
+
+        </div>
+        </div>
+
+        <h3 class="text-primary ms-5">Instalaciones & Servicios</h3>
         <div class="row">
-            <div class="col p-5"><img
-                    src="	https://www.clinicasantiago.com.ec/wp-content/uploads/2021/08/tomografia-clinica-santiago.jpg"
-                    alt=""></div>
-            <div class="col m-4">
-                <h1>Servicio de imagen</h1>
-                <p>
-                    Nuestro servicio de imagen está a cargo de nuestro personal experto en radiología para el análisis
-                    de imágenes que permiten ver estructuras dentro del cuerpo para el diagnóstico y tratamiento.
-
-                </p>
-                <h3 class="text-success">
-                    El servicio de imagen cuenta con
-                </h3>
-                <ul>
-                    <li>Rayos X</li>
-                    <li>Fluroscopia</li>
-                    <li>Tomografía</li>
-                    <li>Densitometría</li>
-                    <li>Mamografía</li>
-                    <li>Ecografía -Ultrasonido </li>
-                </ul>
-                <h3 class="text-success">
-                    Tecnología y formación</h3>
-                <p>En constante innovación tecnológica y en permanente capacitación para entregar el mejor servicio en
-                    la región.</p>
+            <div class="col-12 col-md-6 col-lg-3 card-services" style="background-image: url(https://cdn2.totalcode.net/lohmedical-us/web_content/assets/riftonpacergaittrainerddadult.jpg);"> 
+                <div class="ml-5 mt-5 mb-2 bg-success text-white card-servicesintern">
+                    <h3>Emergencias</h3>
+                    <p>Un completo servicio de Emergencias para pacientes de todas las edades con cobertura 24 horas al día, 365 días al año.
+    
+                    </p>
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <h1 class="text-primary">Convenios
-                </h1>
+            <div class="col-12 col-md-6 col-lg-3 card-services" style="background-image: url(https://cdn2.totalcode.net/lohmedical-us/web_content/assets/riftonpacergaittrainerddadult.jpg);"> 
+                <div class="ml-5 mt-5 mb-2 bg-success text-white card-servicesintern">
+                    <h3>Hospitalización</h3>
+                    <p>Una amplia área de hospitalización, con el respaldo de Médicos y Enfermeras altamente capacitados.
+                    </p>
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <p class="mx-5 ">Trabajamos incansablemente para satisfacer las necesidades de nuestros pacientes, por
-                    ello mantenemos importantes convenios con las principales Empresas de Medicina Prepagada.</p>
+            <div class="col-12 col-md-6 col-lg-3 card-services" style="background-image: url(https://cdn2.totalcode.net/lohmedical-us/web_content/assets/riftonpacergaittrainerddadult.jpg);"> 
+                <div class="ml-5 mt-5 mb-2 bg-success text-white card-servicesintern">
+                    <h3>Quirófano</h3>
+                    <p>Sala de operaciones totalmente dotada con equipos de última tecnología y personal altamente calificado.
+                    </p>
+                </div>
             </div>
-            <div class=" mx-5 px-5">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-                <img src="https://www.clinicasantiago.com.ec/wp-content/uploads/2022/05/GMMI_logo.jpg" class="m-3"
-                    width="150px" alt="">
-
+    
+            <div class="col-12 col-md-6 col-lg-3 card-services" style="background-image: url(https://cdn2.totalcode.net/lohmedical-us/web_content/assets/riftonpacergaittrainerddadult.jpg);"> 
+                <div class="ml-5 mt-5 mb-2 bg-success text-white card-servicesintern">
+                    <h3>Especialidades</h3>
+                    <p>Contamos con una amplia variedad de especialidades y áreas médicas con profesionales de gran prestigio.
+                    </p>
+                </div>
             </div>
-
-            <h3 class="text-primary">Instalaciones & Servicios</h3>
         </div>
     </div>
     <footer class="pie_pagina">
@@ -141,7 +215,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="imagenes/clinica_santiago_logo.png">
+                        <img src="imagenes/clinica_santiago_logo.png" class="img-fluid">
                     </a>
                 </figure>
             </div>
