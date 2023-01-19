@@ -7,14 +7,31 @@
     <link rel="stylesheet" href="scss/bootstrap.scss">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="estilos.css">
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="jquery-3.6.1.js"></script>
+    <script src="jqueryEasing_1.3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="estilos.css">
     <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".columna").hover(function () {
+                $(this).animate({
+                    marginleft: "100px",
+                    width: "250pX",
+                    height: "200px",
+                }, 1000)
+                $(this).css("background-color", "aliceblue");
+            }, function () {
+                $(this).css("background-color", "white");
+            });
+        });
+    </script>
+
     <title>Laboratorio en Sto Dmgo</title>
     <style>
         .columna {
@@ -90,7 +107,7 @@
                     <div class="col-12 col-lg-6">
 
 
-                        <h4>El Mejor Laboratorio en Santo Domigo</h4>
+                        <h2>El Mejor Laboratorio en Santo Domigo</h2>
                         <p>El Consorcio Clínica Santiago, es parte del corazón de los habitantes de Santo domingo de los
                             Tsáchilas. Nuestra institución es sinónimo de confianza y experiencia en servicios médicos.
                             Los
@@ -109,43 +126,43 @@
 
                     </div>
                     <div class="col-xl-5 col-lg-6 ">
-                        <img src="imagenes/img.jpg" width=70%>
+                        <img src="imagenes\img.jpg." width=70%>
                     </div>
                 </div>
-            </section>
-        </section>
-        <br><br><br><br>
-        <article class="row">
-            <section class="container">
-                <div class="row justify-content-around">
-                    <div class="columna col-lg-2">
-                        <h3><b> Emergencias</b></h3>
-                        <p>Un completo servicio de Emergencias para pacientes de todas las edades con cobertura
-                            24 horas al día, 365 días al año.</p>
-                    </div>
-                    <div class="columna col-lg-2">
-                        <h3> <b>Hospitalización</b></h3>
-                        <p>Una amplia área de hospitalización, con el respaldo de Médicos y Enfermeras altamente
-                            capacitados.</p>
-                    </div>
-                    <div class="columna col-lg-2">
-                        <h3><b>Quirófano</b></h3>
-                        <p>Sala de operaciones totalmente dotada con equipos de última tecnología y personal altamente
-                            calificado.</p>
-                    </div>
-                    <div class="columna col-lg-2">
-                        <h3><b>Especialidades</b></h3>
-                        <p>Contamos con una amplia variedad de especialidades y áreas médicas con profesionales de gran
-                            prestigio.</p>
-                    </div>
-                </div>
-            </section>
-        </article>
-
-
-        </section>
-        <br><br><br><br>
     </div>
+    </section>
+    </section>
+    <br><br><br><br>
+    <article class="row">
+        <section class="container">
+            <div class="row justify-content-around">
+                <div class="columna col-lg-2">
+                    <h3><b> Emergencias</b></h3>
+                    <p>Un completo servicio de Emergencias para pacientes de todas las edades con cobertura
+                        24 horas al día, 365 días al año.</p>
+                </div>
+                <div class="columna col-lg-2">
+                    <h3> <b>Hospitalización</b></h3>
+                    <p>Una amplia área de hospitalización, con el respaldo de Médicos y Enfermeras altamente
+                        capacitados.</p>
+                </div>
+                <div class="columna col-lg-2">
+                    <h3><b>Quirófano</b></h3>
+                    <p>Sala de operaciones totalmente dotada con equipos de última tecnología y personal altamente
+                        calificado.</p>
+                </div>
+                <div class="columna col-lg-2">
+                    <h3><b>Especialidades</b></h3>
+                    <p>Contamos con una amplia variedad de especialidades y áreas médicas con profesionales de gran
+                        prestigio.</p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    </section>
+    <br><br><br><br>
     <footer class="pie_pagina">
         <div class="grupo-1">
             <div class="box">

@@ -14,15 +14,125 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <script src="js/jquery-3.6.1.js"></script>
+  <script src="js/jquery_easing.1.3.js"></script>
 
   <link rel="stylesheet" href="estilos.css">
   <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
 
+
+
+  <script>
+    $(document).ready(function () {
+      $("#abierto").click(function () {
+        $("#login form").slideToggle(1000);
+        $(this).toggleClass("cerrado");
+      });
+    });
+  </script>
+
+  <style>
+    #login {
+      width: 1140px;
+
+      left: 560px;
+      top: 8px;
+      z-index: 100;
+    }
+
+    #abierto {
+      margin: 0;
+      cursor: pointer;
+      background: rgb(255, 255, 255) url(img/open.png) no-repeat 8px 7px;
+      color: rgb(58, 80, 123);
+      padding: 5px 0 2px 30px;
+    }
+
+    #login .cerrado {
+      background-image: url(img/close.png);
+      background-color: rgb(110, 138, 195);
+    }
+
+    #abierto:hover {
+      color: rgb(0, 0, 0);
+      background-color: rgb(110, 138, 195);
+    }
+
+    #login form {
+      padding: 10px 10px 10px 10px;
+      display: none;
+      background-color: rgb(255, 255, 255);
+    }
+
+    #login label {
+      display: inline;
+      width: 100px;
+      text-align: right;
+      margin: 0 15px 0 0;
+      color: rgb(58, 80, 123);
+    }
+
+    #login input {
+      font-size: 14px;
+    }
+
+    #login #boton {
+      margin-left: 50px;
+    }
+
+    .cabecera {
+      position: relative;
+      border-top: solid 6px white;
+      padding: 10px 0 10px 0;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      letter-spacing: -1px;
+      color: rgb(195, 151, 51);
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, .25);
+      font: normal 54px Arial, sans-serif;
+    }
+
+    .contenido {
+      max-width: 760px;
+      margin: 20px 0 0 100px;
+    }
+
+    .principal {
+      padding-top: 1 em;
+      border-bottom: solid 1px rgba(255, 255, 255, .5);
+      overflow-x: hidden;
+      min-height: 300px;
+    }
+
+    .principal h1 {
+      font-size: 32px;
+      color: white;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+      border-bottom: solid 1px rgba(255, 255, 255, .5);
+      margin-bottom: 0.75em;
+    }
+
+    p,
+    form {
+      font-size: 18px;
+      color: rgb(14, 1, 1);
+      font-family: Arial, sans-serif;
+      line-height: 125%;
+      margin-bottom: 10px;
+    }
+
+    html,
+    body {
+      line-height: 1;
+      background-color: cornflowerblue;
+    }
+  </style>
 </head>
 
 <body>
-
+  </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <img src="imagenes/clinica_santiago_logo.png" width="75" class="navbar-brand"><a class="navbar-brand"
@@ -65,9 +175,6 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Nuestros Medicos</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Inicio</a></li>
-        </ul>
         <form class="navbar-form navbar-left" action="/action_page.php"></form>
 
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Agendar
@@ -85,11 +192,11 @@
               </div>
               <div class="modal-body">
                 <p>
-                <h3> Horario de Visita Hospitalización: </h3>
-                Lunes a Sabado de 10:00 a.m. a 12:00 p.m. y de 4:00 pm a 5:00pm
+                <h3> Horario de Atención: </h3>
+                Lunes a Sabado de 09:00 a.m. a 07:00 p.m
 
                 <h3> Horarios de Atención en el área administrativa y consulta externa</h3>
-                Lunes a Sabado de 7:00 a.m. a 12:00 p.m. y de 1:30 pm a 5:00pm
+                Lunes a Sabado de 7:00 a.m. a 12:00 p.m.
 
                 <h3> Horarios de atención en Urgencias: </h3>
                 de Lunes a Domingo: 24 horas</p>
@@ -141,6 +248,29 @@
         <span class="sr-only">Siguiente</span>
       </a>
     </div>
+    <div class="container">
+      <div class="row">
+        <div id="login">
+          <p id="abierto">Horarios de Atención </p>
+    
+          <form action="">
+            <p>
+            <h3> Horario de Visita Hospitalización: </h3>
+            Lunes a Sabado de 10:00 a.m. a 12:00 p.m. y de 4:00 pm a 5:00pm
+    
+            <h3> Horarios de Atención en el área administrativa y consulta externa</h3>
+            Lunes a Sabado de 7:00 a.m. a 12:00 p.m. y de 1:30 pm a 5:00pm
+    
+            <h3> Horarios de atención en Urgencias: </h3>
+            de Lunes a Domingo: 24 horas
+            </p>
+    
+    
+          </form>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Appointment Start -->
     <div class="container-fluid bg-primary my-1 py-1">
@@ -156,6 +286,9 @@
             Nosotros contamos con un equipo de Medicos de elite especializados en diferentes paises y areas Nosotros
             contamos con un equipo de Medicos de elite especializados en diferentes paises y areas .</p>
           <center> <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="contacto.html">Contactos</a> </center>
+
+
+
         </div>
       </div>
     </div>
@@ -205,6 +338,48 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+
+
+  <style>
+    body {
+      background-color: blanchedalmond;
+    }
+
+    #menu {
+      width: 90px;
+      background-color: cadetblue;
+      padding: 20px 20px 0 20px;
+      position: absolute;
+      left: -122px;
+      z-index: 100;
+    }
+
+    #menu img {
+      margin-bottom: 20px;
+      border: 1px solid black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      margin-left: 150px;
+    }
+  </style>
+  <div id="menu">
+    <!--Crea seis imagenes-->
+    <img src="img/delfin.jpg" alt="img" width="70" height="90" />
+    <img src="img/gato.jpg" alt="img" width="70" height="90" />
+    <img src="img/lobo.jpg" alt="img" width="70" height="90" />
+    <img src="img/delfin.jpg" alt="img" width="70" height="90" />
+    <img src="img/perro.jpg" alt="img" width="70" height="90" />
+  </div>
+
+
+
+
+
 
 </body>
 

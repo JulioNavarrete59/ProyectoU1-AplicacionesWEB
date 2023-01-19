@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="scss/bootstrap.scss">
 
@@ -15,7 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/7b2a0f7677.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/contacto.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Contáctanos</title>
 </head>
 
@@ -64,7 +66,7 @@
                     <h3 class="text-success p-4">Envíanos un mensaje</h3>
                     <p>Por favor, completa el siguiente formulario para enviar sugerencias, comentarios o solicitar
                         información. Este servicio está disponible de lunes a viernes, de 9:00 a 18:00 horas.</p>
-                    <form action="">
+                    <form action="" id="formulario">
                         <div class="row mt-3">
                             <div class="col form-group">
                                 <label for="Nombre">Nombre</label>
@@ -73,8 +75,8 @@
                             </div>
                             <div class="col form-group">
                                 <label for="Nombre">Apellido</label>
-                                <input type="text" class="form-control mt-3" placeholder="Nombre" name="nombre"
-                                    id="nombre">
+                                <input type="text" class="form-control mt-3" placeholder="Apellido" name="apellido"
+                                    id="apellido">
                             </div>
                         </div>
                         <div class="form-group mt-3">
@@ -101,7 +103,7 @@
 
                         <div class="col p-3 red-social">
                             <div class="fa fa-phone p-1"></div>
-                            <h5>Llámanos</h5>
+                            <h5 class="fs-2">Llámanos</h5>
                             <br>
                             <p>+593 99 820 1714</p>
                             <p>+593 98 862 3973</p>
@@ -111,13 +113,13 @@
                         </div>
                         <div class="col p-3">
                             <div class="fas fa-sms p-1"></div>
-                            <h5>Escribenos</h5>
+                            <h5 class="fs-2">Escribenos</h5>
                             <br>
-                            <p>degranda1@espe.edu.ec</p>
-                            <p>mmguaman8@espe.edu.ec</p>
-                            <p>mejara1@espe.edu.ec</p>
-                            <p>janavarrete8@espe.edu.ec</p>
-                            <p>lcpoma@espe.edu.ec</p>
+                            <p><a href="mailto:degranda1@espe.edu.ec?subject=Solicitar%20informaci%C3%B3n%20&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20mas%20del%20tema." class="link-light enlace">degranda1@espe.edu.ec</a></p>
+                            <p><a href="mailto:mmguaman8@espe.edu.ec?subject=Solicitar%20informaci%C3%B3n%20&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20mas%20del%20tema." class="link-light enlace">mmguaman8@espe.edu.ec</a></p>
+                            <p><a href="mailto:mejara1@espe.edu.ec?subject=Solicitar%20informaci%C3%B3n%20&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20mas%20del%20tema." class="link-light enlace">mejara1@espe.edu.ec</a></p>
+                            <p><a href="mailto:janavarrete8@espe.edu.ec?subject=Solicitar%20informaci%C3%B3n%20&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20mas%20del%20tema." class="link-light enlace">janavarrete8@espe.edu.ec</a></p>
+                            <p><a href="mailto:lcpoma@espe.edu.ec?subject=Solicitar%20informaci%C3%B3n%20&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20mas%20del%20tema." class="link-light enlace">lcpoma@espe.edu.ec</a></p>
                         </div>
                     </div>
                     <div class="row">

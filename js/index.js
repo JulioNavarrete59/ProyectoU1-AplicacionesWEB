@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#desplegar_mision").hide();
+    $("#mision").click(function(){
+        $("#desplegar_mision").toggle(1000);
+        $(this).toggleClass("cerrado");
+    })
+    $("#desplegar_vision").hide();
+    $("#vision").click(function(){
+        $("#desplegar_vision").toggle(1000);
+        $(this).toggleClass("cerrado");
+    })
+    $("#desplegar_historia").hide();
+    $("#historia").click(function(){
+        $("#desplegar_historia").toggle(1000);
+        $(this).toggleClass("cerrado");
+    })
+})

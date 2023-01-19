@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
+body {
+    background-color: blanchedalmond;
+}
+
 .especialidades {
     background-color: rgb(35, 68, 112);
     color: white;
     text-decoration: solid;
+    border-radius: 20px;
+}
+
+.imagenes {
+    border-radius: 20px;
 }
 
 .valores {
@@ -14,6 +23,26 @@
 h4 {
     text-align: center;
     padding-top: 10px;
+}
+
+#mision {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#vision {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#historia {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -151,7 +180,7 @@ p {
 }
 
 .fondo_video {
-    background-color: #F7FDFB;
+    background-color: blanchedalmond;
 }
 
 .imgScale {
